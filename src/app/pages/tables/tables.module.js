@@ -16,7 +16,7 @@
           template : '<ui-view  autoscroll="true" autoscroll-body-top></ui-view>',
           abstract: true,
           controller: 'TablesPageCtrl',
-          title: 'Tables',
+          title: '标签打印',
           sidebarMeta: {
             icon: 'ion-grid',
             order: 300,

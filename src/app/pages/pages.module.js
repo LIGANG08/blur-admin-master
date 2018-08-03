@@ -8,7 +8,7 @@
   angular.module('BlurAdmin.pages', [
     'ui.router',
 
-    'BlurAdmin.pages.dashboard',
+    // 'BlurAdmin.pages.dashboard',
     'BlurAdmin.pages.ui',
     'BlurAdmin.pages.components',
     'BlurAdmin.pages.form',
@@ -16,15 +16,20 @@
     'BlurAdmin.pages.charts',
     'BlurAdmin.pages.maps',
     'BlurAdmin.pages.profile',
+    'BlurAdmin.pages.news',
+    'BlurAdmin.pages.house',
+    'BlurAdmin.pages.vehicle',
+    'BlurAdmin.pages.system',
+    'BlurAdmin.pages.users',
   ])
       .config(routeConfig);
 
   /** @ngInject */
   function routeConfig($urlRouterProvider, baSidebarServiceProvider) {
-    $urlRouterProvider.otherwise('/dashboard');
+    $urlRouterProvider.otherwise('/components/mail/mail.html');
 
     baSidebarServiceProvider.addStaticItem({
-      title: 'Pages',
+      title: '职场管理',
       icon: 'ion-document',
       subMenu: [{
         title: 'Sign In',
@@ -41,20 +46,6 @@
         title: '404 Page',
         fixedHref: '404.html',
         blank: true
-      }]
-    });
-    baSidebarServiceProvider.addStaticItem({
-      title: 'Menu Level 1',
-      icon: 'ion-ios-more',
-      subMenu: [{
-        title: 'Menu Level 1.1',
-        disabled: true
-      }, {
-        title: 'Menu Level 1.2',
-        subMenu: [{
-          title: 'Menu Level 1.2.1',
-          disabled: true
-        }]
       }]
     });
   }

@@ -14,5 +14,4 @@
     vm.messages = mailMessages.getMessagesByLabel($stateParams.label);
     vm.label = $stateParams.label;
   }
-
 })();

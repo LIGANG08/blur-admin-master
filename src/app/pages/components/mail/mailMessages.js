@@ -13,7 +13,7 @@
     var messages = [
       {
         "id": "4563faass",
-        "name": "Nasta Linnie",
+        "name": "资产",
         "subject": "Great text",
         "date": "2015-08-28T07:57:09",
         "body": $sce.trustAsHtml("<p>Hey John, </p><p>Check out this cool text.</p>"),
@@ -208,24 +208,24 @@
       }).reverse();
     var tabs = [{
       label: 'inbox',
-      name: 'Inbox',
-      newMails: 7
+      name: '资产验收',
+      // newMails: 7
     }, {
       label: 'sent',
-      name: 'Sent Mail'
+      name: '资产登记'
     }, {
       label: 'important',
-      name: 'Important'
+      name: '资产领用/返还'
     }, {
       label: 'draft',
-      name: 'Draft',
-      newMails: 2
+      name: '资产借用/归还',
+      // newMails: 2
     }, {
       label: 'spam',
-      name: 'Spam'
+      name: '资产转移'
     }, {
       label: 'trash',
-      name: 'Trash'
+      name: '资产调拨'
     }];
 
     return{

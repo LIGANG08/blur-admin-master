@@ -45,5 +45,8 @@
   },
   "scripts": {
     "postinstall": "bower install"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
   }
 }

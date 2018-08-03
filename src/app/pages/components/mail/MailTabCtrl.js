@@ -20,8 +20,6 @@
         text: text
       })
     };
-
     vm.tabs = mailMessages.getTabs();
   }
-
 })();
